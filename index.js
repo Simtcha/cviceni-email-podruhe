@@ -5,20 +5,9 @@ Například formalGoodbye pro velmi formální pozdravy jako „S uctivou poklon
 nebo naopak rudeGoodbye typu „Se měj…“, pokud se chcete rozloučit nevybíravě.
 Upravte funkci fillBody tak, aby brala třetí parametr goodbyeFunction představující funkci, 
 pomocí které se má vygenerovat závěrečný pozdrav. Vyzkoušejte zavolat funkci fillBody postupně s každou z vašich zdravících funkcí a ověřte, 
-že vše správně funguje.
+že vše správně funguje.*/
 
 
-Ukázka použití
-fillSubject('Obchodní sdělení');
-fillBody(
-  'Kupte mycí prostředek, který vám vytře zrak, se slevou 50 %.',
-  'Jan Čistý',
-  formalGoodbye
-);
-nebo
-
-fillSubject('Pozvánka na oslavu narozenin');
-fillBody('Zítra oslava. 18:00 ve Starý hospodě.', 'Patrik Veselý', rudeGoodbye);*/
 
 const formalGoodbye = (name) => {
   return 'S uctivou poklonou ' + name
